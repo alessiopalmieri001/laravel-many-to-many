@@ -1,18 +1,19 @@
 #dashboard{
 
-    padding-top: 40px;
+    padding-top: 80px;
+    height: 100vh;
     .row{
         .col-12{
             
             h1{
-
-                text-transform: uppercase;
-                font-size: 4rem;
-                font-weight: 900;
-                color: #001f3f;
+                font-size: 3rem;
+                color: black;
                 margin: 0;
+                font-weight: 700;
                 span{
-                    color: #2ecc71;
+                    color: black;
+                    padding: 9px 16px;
+                    border: 4px solid black;
                 }
             }
             

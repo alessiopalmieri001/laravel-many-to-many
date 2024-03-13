@@ -24,6 +24,26 @@
                                 {{ $project->content }}
                             </p>
 
+                            @if ($project->type != null)
+                                <a href="{{ route('types.show', ['type'=>$project->type->slug]) }}">
+                                    {{ $project->type->name }}
+                                </a>
+                            @else
+                                -
+                            @endif
+
+                            <div>
+                                @if ($project->tags != null)
+                                    @foreach ($project->tags as $singleTag)
+                                    <a href="" class="tag">
+                                        {{ $singleTag->name }}
+                                    </a>
+                                    @endforeach
+                                @else
+                                    -
+                                @endif
+                            </div>
+
                             <a href="{{ route('admin.projects.show', ['project' => $project->slug]) }}" class="show-button align-self-baseline">
                                 Mostra
                             </a>

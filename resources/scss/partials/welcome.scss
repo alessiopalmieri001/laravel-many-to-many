@@ -1,26 +1,33 @@
 #welcome{
-
+    height: 100vh;
     padding-top: 80px;
     .container{
 
         h1{
-            text-transform: uppercase;
-            font-size: 4rem;
-            font-weight: 900;
-            color: #001f3f;
-            span{
-                color: #2ecc71;
-            }
+            font-size: 3rem;
+            font-weight: 800;
+            color: black;
+            margin-bottom: 20px;
         }
 
         .frame{
 
-            border-radius: 30px;
             .row{
-
-                min-height: 300px;
+                min-height: 500px;
+                .col-4, .col-8{
+                    border: 2px solid black;
+                }
                 .col-4{
-                    border: 1px solid gray;
+                    .row{
+                        .col-12{
+                            height: 250px;
+                            border-bottom: 2px solid black;
+                        }
+                        .col-6{
+                            border-right: 2px solid black;
+                            height: 250px;
+                        }
+                    }
                 }
             }
         }

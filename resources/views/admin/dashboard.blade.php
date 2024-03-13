@@ -10,7 +10,7 @@
                 @if ($stringaSalutaUtente != null)
                     <h1>
                         Benvenuto
-                        <span>{{ $stringaSalutaUtente }}</span> !
+                        <span>{{ $stringaSalutaUtente }}</span>
                     </h1>
                 @endif
                     

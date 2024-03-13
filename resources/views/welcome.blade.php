@@ -4,19 +4,27 @@
     <section id="welcome">
         <div class="container">
             <h1>
-                Benvenuti nel <span>nostro</span> portfolio !
+                Benvenuti nel nostro portfolio !
             </h1>
 
             <div class="frame">
-                <div class="row">
-                    <div class="col-4 rounded-start-4 ">
+                <div class="row g-0 ">
+                    <div class="col-8 border-end-0 ">
 
                     </div>
-                    <div class="col-4 border-end-0 border-start-0 ">
+                    
+                    <div class="col-4 ">
+                        <div class="row g-0 ">
+                            <div class="col-12">
 
-                    </div>
-                    <div class="col-4 rounded-end-4">
+                            </div>
+                            <div class="col-6">
 
+                            </div>
+                            <div class="col-6 border-end-0 ">
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

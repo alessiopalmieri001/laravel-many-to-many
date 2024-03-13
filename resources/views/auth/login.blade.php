@@ -31,10 +31,15 @@
                         Password
                     </label>
                     <input type="password" id="password" name="password">
-                    <label for="remember_me">
-                        <input id="remember_me" type="checkbox" name="remember">
-                        <span>Remember me</span>
-                    </label>
+
+                    <div class="remember">
+                        <label for="remember_me">
+                            <span>Remember me</span>
+                        </label>
+                        <input id="remember_me" type="checkbox" name="remember" class="m-0">
+                    </div>
+                            
+                    
                 </div>
         
                 

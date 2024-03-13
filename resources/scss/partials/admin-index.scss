@@ -1,63 +1,87 @@
 #index-admin, #index-guest{
 
     padding-top: 40px;
-    background-color: #F2F2F2;
-   #add {
-    margin-bottom: 50px;
-    text-align: end;
+    .row{
 
+        .col-5{
+            margin-bottom: 20px;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+
+   #add {
+    margin: 50px 0 20px 0;
         .add-button {
-            background-color: #046A4E;
-            color: white;
+            color: black;
             text-decoration: none;
             font-size: 1.1rem;
             font-weight: bolder;
             padding: 10px 16px;
-            text-transform: uppercase;
-            border-radius: 5px;
-        }
-
-        .add-button:hover {
-            background-color: rgb(2, 201, 2);
-            transition: background-color 0.5s ;
+            border: 2px solid black;
+            transition: all .5s ease-in-out;
+            &:hover{
+                color: white;
+                background-color: black;
+            }
         }
    } 
 
 
     .my-card {
-
-        background-color: white;
-        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.351);
+        backdrop-filter: blur(6px);
         padding: 20px; 
-        height: 350px;
-        box-shadow: 0px 8px 15px 0px #0000005f;
+        height: 450px;
+        border: 2px solid black;
+        margin-bottom: 24px;
         position: relative;
         .my-card-body {
 
 
             h3{
-                font-size: 1.5rem;
-                font-weight: bolder;
-                color: #001f3f;
+                font-size: 1.3rem;
+                font-weight: 600;
+                color: black;
+                margin-bottom: 8px;
             }
 
             p{
                 padding: 10px;
                 overflow-y: auto;
-                font-size: 0.9em;
+                font-size: 0.8em;
+                height: 60%;
+            }
+
+            a{
+                padding: 8px 10px;
+                color: #001f3f;
+                font-weight: 400;
+                margin-bottom: 10px;
+            }
+
+            .tag{
+                padding: 8px 10px;
+                color: white;
+                display: inline-block;
+                font-size: 0.7rem;
+                background-color: black;
+                margin-bottom: 40px;
             }
             
             .show-button {
-                background-color: #001f3f;
+                background-color: transparent;
+                border: 2px solid black;
+                color: black;
                 text-decoration: none;
-                padding: 8px 12px;
-                border-radius: 8px;
-                border-width: 0;
-                color: white;
+                padding: 5px 12px;
             }
     
             .show-button:hover {
-                background-color: #0371df;
+                background-color: black;
+                color: white;
                 transition: background-color 0.5s ;
             }
     
@@ -68,29 +92,40 @@
     
                 .edit-button {
 
-                    background-color: lightgrey;
-                    color: white;
+                    background-color: white;
+                    color: black;
                     text-decoration: none;
+                    backdrop-filter: blur(3px);
                     width: 50px;
                     height: 50px;
                     text-align: center;
-                    line-height: 50px;
-                    font-size: 24px;
-                    border-radius: 50%;
-                    transition: background-color 0.5s ;
+                    line-height: 35px;
+                    font-size: 20px;
+                    border: 1px solid black;
+                    transition: all .1s ease-in-out; 
                     &:hover{
-                        background-color: #ffd908;
+                        transform: scale(1.1);
                     }
+                    &:focus{
+                        transform: scale(1.01);
+                    }
+                    
                 }
     
                 .erase-button {
-                    
-                    background-color: #b61909;
+                    backdrop-filter: blur(3px);
+                    background-color: black;
                     color: white;
-                    border-width: 0;
+                    border: 1px solid black;
                     height: 50px;
                     width: 50px;
-                    border-radius: 50%;
+                    transition: all .2s ease-in-out; 
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                    &:focus{
+                        transform: scale(1.01);
+                    }
                 }
             }
         }
@@ -99,14 +134,13 @@
 }
 
 ::-webkit-scrollbar {
-    width: 8px; // Larghezza della barra di scorrimento
+    width: 5px;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #333333;
+    background-color: #cccccc;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #00b386;
-    border-radius: 6px;
+    background-color: #a8a8a8;
 }

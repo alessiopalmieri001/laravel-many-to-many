@@ -13,6 +13,20 @@ class Project extends Model
         'title',
         'slug',
         'content',
-        'status'
+        'type_id',
+        'status',
+        'cover_img'
     ];
+
+    
+
+    public function type()
+    {
+        return $this->belongsTo(Type::class);
+    }
+
+    public function tags()
+    {
+        return $this->belongsToMany(Tag::class);
+    }
 }

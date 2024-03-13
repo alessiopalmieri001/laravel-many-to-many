@@ -4,6 +4,9 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
+// Helpers
+use Illuminate\Support\Facades\Auth;
+
 class UpdateProjectRequest extends FormRequest
 {
     /**
@@ -11,7 +14,7 @@ class UpdateProjectRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return true;
+        return Auth::check();
     }
 
     /**
@@ -25,8 +28,10 @@ class UpdateProjectRequest extends FormRequest
             'title' => 'required|max:255',
             'slug'=> 'nullable|max:255',
             'content' => 'required|max:1024',
-            
-        
+            'type_id' => 'nullable|exists:types,id',
+            'tags' => 'nullable|array|exists:tags,id',
+            'cover_img' => 'nullable|image',
+            'delete_cover_img' => 'nullable|boolean',
         ];
     }
     public function messages(): array
@@ -34,6 +39,8 @@ class UpdateProjectRequest extends FormRequest
         return [
             'title.required' => 'Inserisci un Titolo per il tuo Progetto',
             'content.required'=> 'Inserisci una descrizione per il tuo Progetto',
+            'cover_image.image'=> 'Inserisci un file valido',
+            'delete_cover_img.boolean'=> 'Inserisci valore valido',
         ];
     }
 }

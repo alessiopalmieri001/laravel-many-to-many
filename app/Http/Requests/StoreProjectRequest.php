@@ -4,6 +4,9 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
+// Helpers
+use Illuminate\Support\Facades\Auth;
+
 class StoreProjectRequest extends FormRequest
 {
     /**
@@ -11,7 +14,7 @@ class StoreProjectRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return true;
+        return Auth::check();
     }
 
     /**
@@ -22,12 +25,13 @@ class StoreProjectRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //Imposto le chiavi che saranno i 'name' degli input del Form
-            // e i value saranno le regole di validazione
 
             'title' => 'required|max:255',
             'slug'=> 'nullable|max:255',
             'content' => 'required|max:1024',
+            'type_id' => 'nullable|exists:types,id',
+            'tags' => 'nullable|array|exists:tags,id',
+            'cover_img' => 'nullable|image',
         ];
     }
 
@@ -36,6 +40,7 @@ class StoreProjectRequest extends FormRequest
         return [
             'title.required' => 'Inserisci un Titolo per il tuo Progetto',
             'content.required'=> 'Inserisci una descrizione per il tuo Progetto',
+            'cover_img.image'=> 'Inserisci un file valido',
         ];
     }
 }

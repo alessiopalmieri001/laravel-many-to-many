@@ -1,6 +1,11 @@
 @import "~bootstrap/scss/bootstrap";
 
-main {
-    height: 100vh;
-    background-color: #F2F2F2;
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+body{
+    background: linear-gradient(135deg, hsla(0, 0%, 100%, 1) 0%, hsla(293, 39%, 84%, 1) 100%);
 }

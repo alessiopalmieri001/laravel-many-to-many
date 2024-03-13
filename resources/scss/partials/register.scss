@@ -1,6 +1,7 @@
 #register{
 
     padding-top: 40px;
+    height: 100vh;
     .container{
         // @if ($errors->any())
         //     <div class="alert alert-danger">
@@ -13,46 +14,42 @@
         //         </ul>
         //     </div>
         // @endif
-        text-align: center;
         form{
             div{
 
+                display: flex;
+                justify-content: start;
                 border: 1px solid rgba(205, 205, 205, 0.508);
                 padding: 20px;
-                border-radius: 15px;
+                flex-direction: column;
                 label{
                     
                     display: block;
-                    text-transform: uppercase;
                     font-weight: bolder;
                     font-size: 1.3rem;
                 }
                 input{
-
-                    border-radius: 8px;
+                    width: 100%;
                     background-color: transparent;
-                    border: 2px solid #001f3f;
-                    padding: 10px 20px;
+                    border: 2px solid black;
+                    padding: 7px 20px;
                     margin-bottom: 10px;
-                    text-align: center
                 }
             }
     
             div{
                 a{
-                    margin-right: 8px;
-                    color: #001f3f;
+                    margin-bottom: 8px;
+                    color: black;
                 }
     
                 button{
                     
-                    background-color: #2ecc71;
-                    text-transform: uppercase;
+                    background-color: black;
                     color: white;
                     font-weight: 600;
                     font-size: 0.9rem;
                     padding: 10px 20px;
-                    border-radius: 8px;
                     border: none;
                 }
             }

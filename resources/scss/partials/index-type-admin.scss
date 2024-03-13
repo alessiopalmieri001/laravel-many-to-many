@@ -1,0 +1,108 @@
+#index-types-admin, #index-types-guest, #index-tags-admin{
+
+    padding-top: 80px;
+    height: 100vh;
+    .container{
+        .row{
+            .col-3{
+
+                .edit-button{
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                    text-align: center;
+                    border: 2px solid black;
+                    display: inline-block; 
+                    color: black;
+                    background-color: white;
+                }
+
+                .delete-button{
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                    text-align: center;
+                    display: inline-block; 
+                    color: white;
+                    background-color: black;
+                    border: 2px solid black;
+                    border: none;
+                }
+
+                a{
+                    text-decoration: none;
+                    .tecnology, .tag{
+                        
+                        margin-top: 10px;
+                        margin-bottom: 80px;
+                        min-height: 150px;
+                        display: flex;
+                        justify-content: center;
+                        text-align: center;
+                        align-items: center;
+                        background: linear-gradient(135deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 80%);
+                        border: 2px solid black;
+                        box-shadow: -10px 10px 0px 1px black;
+                        transition: all .2s ease-in-out;
+                        &:hover{
+                            background: none;
+                            background-color: black;
+                            box-shadow: -10px 10px 0px 1px white;
+                        }
+                        &:hover h3{
+                            color: white;
+                        }
+                        h3{
+                            font-weight: 700;
+                            color: black;
+                            margin: 0;
+                        }
+                    }
+
+                }
+            }
+
+            .col-3{
+
+                span{
+                    font-size: 2rem;
+                    font-weight: 700;
+                    color: black;
+                    margin: 0;
+                }
+
+                a{
+                    text-decoration: none;
+                    .add-tecnology{
+                        
+                        margin-top: 12px;
+                        margin-bottom: 80px;
+                        min-height: 150px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: linear-gradient(135deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 80%);
+                        border: 2px solid black;
+                        box-shadow: -10px 10px 0px 1px black;
+                        transition: all .2s ease-in-out;
+                        &:hover{
+                            background: none;
+                            background-color: black;
+                            box-shadow: -10px 10px 0px 1px white;
+                        }
+                        &:hover h3{
+                            color: white;
+                        }
+                        h3{
+                            font-weight: 600;
+                            font-size: 3rem;
+                            color: black;
+                            margin: 0;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

@@ -11,47 +11,51 @@
     //     </div>
     // @endif
     padding-top: 40px;
+    height: 100vh;
     .container{
 
-        text-align: center;
         form{
             
             div{
-
+                display: flex;
+                justify-content: start;
                 border: 1px solid rgba(205, 205, 205, 0.508);
                 padding: 20px;
-                border-radius: 15px;
+                flex-direction: column;
 
                 label{
                     
                     display: block;
-                    text-transform: uppercase;
                     font-weight: bolder;
                     font-size: 1.3rem;
                 }
     
                 input{
-                    
-                    border-radius: 8px;
+                    width: 100%;
                     background-color: transparent;
-                    border: 2px solid #001f3f;
-                    padding: 10px 20px;
+                    border: 2px solid black;
+                    padding: 7px 20px;
                     margin-bottom: 10px;
-                    text-align: center;
                 }
 
-                label{
-    
-                    input{
-                        background-color: #001f3f;
+                .remember{
+
+                    border: none;
+                    label{
+        
+                        span{
+                            
+                            font-size: medium;
+                            text-transform: none;
+                            font-weight: lighter;
+                            color: black;
+                            margin-right: 8px;
+                            display: block;
+                        }
                     }
-    
-                    span{
+                    input{ 
                         
-                        font-size: medium;
-                        text-transform: none;
-                        font-weight: lighter;
-                        color: rgb(0, 0, 0);
+                        width: 20px;
                     }
                 }
             }
@@ -59,18 +63,16 @@
     
             div{
                 a{
-                    margin-right: 8px;
+                    margin-bottom: 8px;
                     color: #001f3f;
                 }
     
                 button{
-                    background-color: #2ecc71;
-                    text-transform: uppercase;
+                    background-color: black;
                     color: white;
                     font-weight: 600;
                     font-size: 0.9rem;
                     padding: 10px 20px;
-                    border-radius: 8px;
                     border: none;
                 }
             }
